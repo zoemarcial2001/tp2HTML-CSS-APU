@@ -1,0 +1,281 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    margin: 0;
+    background-color: #98a1a7;
+}
+
+header h1{
+    text-align:center;
+    font-size: 40px;
+    color: #080808;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+section{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-height: 1000px;
+}
+
+section article{
+    width: 330px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+section article:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+section article img{
+    width: 330px;
+    height: 220px;
+}
+
+section article h3{
+    font-weight: 600;
+    margin-top: 0;
+    height: auto;
+}
+
+section article p{
+    padding: 0 1rem;
+    font-size: small;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+section article h5 {
+    padding: 0 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: #3498db;
+    margin-top: 0;
+}
+
+footer{
+    background-color: aquamarine;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+nav{
+	list-style: none;
+	padding: 0;
+	background: #0d798a;
+	width: 100%;
+	margin: auto;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+    text-align: center;
+    width: 70px;
+	padding: 20px;
+	display: inline-block;
+}
+
+nav a:hover, aside a:hover{
+	background: #ef8354;
+}
+
+nav .pos{
+    background-color: #ef8354;
+}
+
+section form div{
+    width: 80%;
+    margin: auto;
+    border-style: hidden;
+    border-color: #98a1a7;
+}
+
+section form .chex label, input{
+  display: inline;
+  justify-content: left;
+}
+
+section form div input, select{
+    width: 100%;
+    margin: auto;
+    border-style: hidden;
+    border-color: #98a1a7;
+    padding: 5px;
+}
+
+section form{
+   width: 70%;
+   margin: 30px;
+   background: #6ed1e0;
+   border-radius: 10px;
+   border-color: #4931d1;
+   border-style: dashed;
+}
+
+
+section form .boton input{
+    width: 90%;
+    background: #0d798a;
+    color: #fff;
+    margin: 30px;
+    padding: 10px;
+}
+
+aside{
+    width: 15%;
+    min-height: 800px;
+    float: right;
+    background: #2d99aa;
+}
+
+aside a{
+	text-decoration: none;
+	color: white;
+	width: 80%;
+    padding: 20px;
+	display: inline-block;
+}
+
+aside .arch{
+    background: #201079;
+}
+
+aside .arch2{
+    background: #42acf3;
+}
+
+aside .acerc{
+    background: #150d42;
+}
+  
+.menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+  .perfil{
+      margin: 40px;
+    width: 100%;
+    display: flex;
+  }
+
+ .perfil .imagen img{
+     border-radius: 50px;
+     width: 150px;
+     height: auto;
+ }
+
+ .perfil .info{
+     text-align: center;
+     margin-left: 10px;
+     min-width: 300px;
+     width: 500px;
+     background: #d5d5d8;
+ }
+
+ .perfil .info h4{
+     font-size: 20px;
+     background: #0d798a;
+     color: #d5d5d8;
+}
+
+.perfil .info h5{
+    font-size: 20px;
+
+}
+
+.galeria{
+    width: 80%;
+}
+
+.galeria h2{
+    text-align: center;
+    width: 100%;
+}
+.galeria img{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+    
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 400%;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 1000px;
+      height: auto;
+      margin-left: 150px;
+  }
+
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+  }
+  
+
+
